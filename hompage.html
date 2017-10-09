@@ -1,0 +1,383 @@
+<html>
+	<head>
+		<title>YSolKim</title>
+		<style>
+			body{ font-family: fantasy; serif; color:gray }
+			a{text-decoration:none;}
+			#logo{background-image: url("logo.jpg"); height:90%; text-align: center;  font-variant:small-caps; background-size: 100% 100%; overflow: hidden;
+				margin-top: 70px;}
+			#menu{ text-align: center; position:fixed; top:0px; height:70px; width: 100%;	background-color: white; z-index: 1;}
+			#main{ text-align: center; position: relative; top: 10%;  }
+			#main a:hover{opacity: 0.4; cursor:pointer;}
+			#facebook{background-image: url("facebook.png"); 
+				height: 50; width: 50; background-size: 50px 50px;
+				}
+			#instagram{background-image: url("instagram.jpg"); 
+				height: 50; width: 50; background-size: 50px 50px;
+				}
+			#introduce{text-align: left; margin-top: 20%;  }
+			#school{float:left; margin-left: 7%;
+					height: 80%; width: 40%; margin-bottom: 15%;}
+			#school a:hover{opacity: 0.4; cursor:pointer;}
+			#school_img{height: 60%; width: 90%; background-size: 60% 90%;}
+			#home{ float:right; margin-right: 7%;
+					height: 80%; width: 40%; margin-bottom: 15%;}
+			#home a:hover{opacity: 0.4; cursor:pointer;}
+			#home_img{height: 60%; width: 90%; background-size: 60% 90%;}
+			body{ text-align: center;}
+			caption { caption-side:bottom; font-size: 15px; }
+			#list {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 20px;
+			margin-left: 10%;
+			max-width:80%;
+			}
+			#list td, #list th {
+			border: 1px solid gray;
+			text-align: center;
+			}
+			#list th {
+			color: white;
+			background-color: gray;
+			}
+			#list tr.alt td {
+			background-color: rgb(214, 237, 215);;
+			}
+			ul li{
+				
+				display:inline;
+				list-style-type: none;
+				padding:5px;
+
+			}
+			ul li a{color:gray;}
+			ul li a:hover{color :black; cursor:pointer;  }
+			ol li{  margin-left: 40%; list-style: lower-roman; text-decoration: underline;}
+			#project{text-align: left;}
+			.projects{clear:both; padding-top:5%;padding-left: 10% ;max-width:80%;}
+			.projects h3{font-size: 30px; }
+			#contact{text-align: left; max-width:60%;padding-left: 20%;}
+
+
+			  @-webkit-keyframes bounce_1 {
+			  5% {  bottom: 10px; left : 15%;  }
+			  25%{  bottom: 200px;  left : 30%;  }
+			  45%{  bottom: 10px;  left : 45%;	  }
+			  75% {  bottom: 200px;  left : 60%;   }
+			  90%{  bottom: 10px;  left : 75%;  }
+			  }
+			  @-webkit-keyframes bounce_2 {
+			  0% {  bottom: 400px; left : 18%;  }
+			  15%{  bottom: 150px;  left : 28%;  }
+			  50%{  bottom: 400px;  left : 38%;	  }
+			  88% {  bottom: 150px;  left : 48%;   }
+			  100%{  bottom: 400px;  left : 58%;  }
+			  }
+			  @-webkit-keyframes bounce_3 {
+			  3% {  bottom: 300px; right : -80%;  }
+			  20%{  bottom: 650px;  right : -73%;  }
+			  38%{  bottom: 300px;  right : -53%;	  }
+			  82% {  bottom: 650px;  right : -31%;   }
+			  97%{  bottom: 300px;  right : -15%;  }
+			  }
+			  #ball1{
+			  position: relative;
+			  width: 150px;
+			  height: 150px;
+			  background-image: url("un_1.jpg");
+ 			  background-size: 100% 100%;
+			  border-radius: 100px;
+			  -webkit-animation-name: bounce_1;
+			  -webkit-animation-iteration-count: infinite;
+			  -webkit-animation-duration: 30s;
+			  }
+			   #ball2{
+			  position: relative;
+			  width: 150px;
+			  height: 150px;
+			  background-image: url("un_2.jpg");
+			  background-size: 100% 100%;
+			  border-radius: 100px;
+			  -webkit-animation-name: bounce_2;
+			  -webkit-animation-iteration-count: infinite;
+			  -webkit-animation-duration: 30s;
+			  }
+			   #ball3{
+			  position: relative;
+			  width: 150px;
+			  height: 150px;
+			  background-image: url("un_3.jpg");
+			   background-size: 100% 100%;
+			  border-radius: 100px;
+			  -webkit-animation-name: bounce_3;
+			  -webkit-animation-iteration-count: infinite;
+			  -webkit-animation-duration: 30s;
+			  }
+			  #ball1_page { position: fixed; top: 20%; left: 20%; right: 20%;bottom: 20%; width: 40%;height: 40%; background: black; border-radius: 30px; visibility: hidden;}
+			  #ball1_a:hover ~ #ball1_page{ cursor:pointer;}
+			  #ball2_a:hover{cursor:pointer;}
+			  #ball3_a:hover{cursor:pointer;}
+		</style>
+	</head>
+	<body>
+		<div id = "logo">
+			<img src="icon.png" style="margin-top:7%;" >
+			<h1 style="color: white; margin-top: 5%; text-shadow: 5px 5px 5px #000000"> YEASOL KIM, Programmer &amp; Patent Attorney</h1>
+			<p style="color: white; font-style : italic; text-shadow: 5px 5px 5px #000000">Whatever you so, make it pay.</p>
+		</div>
+		
+		<div id = "menu">
+		<hr/>
+			<ul>
+				<li><a href="#logo">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#menu2">Activity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#menu3">Project&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#menu4">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#menu5">Uncategorized v</a></li>
+			</ul>
+		<hr/>
+		</div>
+		<div id = "menu1"></div>
+		<div id = "main">
+			<p style="font-size : 50px; ">Welcome to YeaSol's homepage </p>
+			<p>안녕하세요 제 홈페이지에 오신것을 환영합니다.
+			저는 떡볶이를 좋아하고 프로그래밍을 하는 변리사가 되고싶은 김예솔입니다.</p>
+			<a href = "https://www.facebook.com/ysolkim94" target="_blank"><img id="facebook"/></a>
+			<a href = "https://www.instagram.com/ysolkim94/" target="_blank"><img id="instagram"/></a>
+		</div>
+		<div id = "introduce" style="margin-bottom:15%; padding-top:5%"  >
+			<div id = "school" >
+				
+				<a href = "school.html" target="_blank"><img id = "school_img" src="skku.jpg" ></a>
+				<h2>성균관대학교</h2>
+				<p style="font-size:13px">2013. 3 </p>
+				<p>1398년 조선이 유교 건국이념에 따라 숭교방(崇敎坊)에 설립한 고려시대 국립최고학부 성균관(成均館)의 전통을 계승하는 성균관대학교 소프트웨어학과에 2013년 3월 입학.</p>
+			</div>
+			
+			<div id = "home">
+				
+				<a href = "house.html" target="_blank"><img id = "home_img"src="house.jpg" ></a>
+				<h2>거주지</h2>
+				<p style="font-size:13px">2013 ~ </p>
+				<p>경기도 수원시 장안구 천천동에 위치한 성균관대학교 기숙사인 봉룡학사 예관에 2013년도부터 거주중.</p>
+			</div>
+		</div>
+		
+		<div id = "activity" style="margin-bottom:15%; padding-top:5%">	
+		<div id = "menu2" style="margin-top:25%;" ></div>
+		<p  style="font-size : 50px; " >Category : Activity </p>
+		
+			<table id="list">
+			<caption>(표)   2013 ~ 2015 활동기록</caption>
+
+				<tr>
+					<th>기간</th>
+					<th>활동내역</th>
+					<th>주최기관</th>
+				</tr>
+				<tr>
+					<td>13년 3월 1일~11월 28일</td>
+					<td>산학협력프로젝트 penta security 방화벽개선</td>
+					<td>Penta security</td>
+				</tr>
+				<tr class="alt">
+					<td>13년 11월 17일</td>
+					<td>소프트웨어 비전특강 참여</td>
+					<td>NHN</td>
+				</tr>
+				<tr>
+					<td>13년 12월 23일</td>
+					<td>미래 IT 캠퍼스 CEO 스타트업 1 DAY School</td>
+					<td>한국생산성본부</td>
+				</tr>
+				<tr class="alt">
+					<td>14년 1월 ~ 15년 2월</td>
+					<td>삼성 소프트웨어 멤버쉽 </td>
+					<td>삼성전자</td>
+				</tr>
+				<tr>
+					<td>14년8월</td>
+					<td>한국 해양재단 해양 영토 대장정</td>
+					<td>한국해양재단</td>
+				</tr>
+				<tr class="alt">
+					<td>14년10월</td>
+					<td>Emc young partners 1기</td>
+					<td>EMC korea</td>
+				</tr>
+				<tr>
+					<td>14년 12월</td>
+					<td>Samsung gear app challenge </td>
+					<td>삼성전자</td>
+				</tr>
+				<tr class="alt">
+					<td>15년8월</td>
+					<td>월드프렌즈 IT봉사단</td>
+					<td>월드프렌즈</td>
+				</tr>
+				<tr>
+					<td rowspan="3">13년 3월 1일~11월 28일</td>
+					<td>산학협력프로젝트 penta security 방화벽개선</td>
+					<td rowspan="3">한국생산성본부</td>
+				</tr>
+				<tr >
+					
+					<td>소프트웨어 비전특강 참여</td>
+			
+				</tr>
+				<tr>
+					
+					<td>미래 IT 캠퍼스 CEO 스타트업 1 DAY School</td>
+					
+				</tr>
+				<tr class="alt">
+					<td>14년 1월 ~ 15년 2월</td>
+					<td>삼성 소프트웨어 멤버쉽 </td>
+					<td>삼성전자</td>
+				</tr>
+				<tr>
+					<td>14년8월</td>
+					<td>한국 해양재단 해양 영토 대장정</td>
+					<td>한국해양재단</td>
+				</tr>
+				<tr class="alt">
+					<td>14년10월</td>
+					<td>Emc young partners 1기</td>
+					<td>EMC korea</td>
+				</tr>
+				<tr>
+					<td>14년 12월</td>
+					<td>Samsung gear app challenge </td>
+					<td>삼성전자</td>
+				</tr>
+				<tr class="alt">
+					<td>15년8월</td>
+					<td>월드프렌즈 IT봉사단</td>
+					<td>월드프렌즈</td>
+				</tr>
+			</table>
+		</div>
+		<div id = "menu3"></div>
+		<div id = "project" style="margin-bottom:15%; padding-top:5%" >
+		<p style="font-size : 50px; text-align:center;  " >Category : project </p>
+			
+			<div id = "proj1" class="projects">
+
+				<h3><hr/>융합 앱 공모전 모바일 게임 어플리케이션제작<hr/></h3>
+				<img src="proj1.jpg"; width="30%"; style="float:left; margin:20px;" >
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(171, 54, 54);">절대음감 및 작곡 모바일 앱</b> 제작하여 수상함.모바일 게임 UI제작 및 다양한 게임 기능 구현, 공동기획음을 듣고 다양한 아이템을 사용하여 맞추는형식 절대음감 및 작곡 모바일 앱 제작하여 수상함.모바일 게임 UI제작 및 다양한 게임 기능 구현, 공동기획 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;음을 듣고 다양한 아이템을 사용하여 맞추는형식 절대음감 및 작곡 모바일 앱 제작하여 수상함.<strong style="color:rgb(171, 54, 54);">모바일 게임 UI제작 및 다양한 게임 기능 구현, 공동기획</strong> 음을 듣고 다양한 아이템을 사용하여 맞추는형식 절대음감 및 작곡 모바일 앱 제작하여 수상함.모바일 게임 UI제작 및 다양한 게임 기능 구현, 공동기획음을 듣고 다양한 아이템을 사용하여 맞추는형식 절대음감 및 작곡 모바일 앱 제작하여 수상함.</p>
+				<ol>
+					<li>다양한 악기소리 지원</li>
+					<li>친구들과 경쟁모드 가능</li>
+					<li>10종의 아이템 사용가능</li>
+					<li>게임을 통한 음정공부</li>
+				</ol>
+
+			</div>
+			<div id = "proj2"  class="projects">
+				<h3><hr/>해커톤 스마트티비 앱제작<hr/></h3>
+				<img src="proj2_1.jpg"; width="30%"; style="float:left;  margin:20px;" >
+				<img src="proj2_2.jpg"; width="30%"; style="float:right;  margin:20px;" >
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style=" color:rgb(171, 54, 54);">스마트티비와 스마트폰 연동 동화제작 앱.</b>스마트 기기간의 연동을 위한 통신연결 및 파일전송, 공동기획
+스마트폰은 컨트롤러 역할을하고 스마트티비는 디스플레이 역할을 하여 커북형식으로 동화를만들고 음성녹음을 직접하여 자기만의 동화를만듬과 동시에 사전을 이용해 의 컨텐츠에대한 정확한 정보제공을 통한 학습효과 부여 스마트티비와 스마트폰 연동 동화제작 앱.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style=" color:rgb(171, 54, 54);">스마트 기기간의 연동을 위한 통신연결 및 파일전송, 공동기획 </b>스마트폰은 컨트롤러 역할을하고 스마트티비는 디스플레이 역할을 하여 커북형식으로 동화를만들고 음성녹음을 직접하여 자기만의 동화를만듬과 동시에 사전을 이용해 의 컨텐츠에대한 정확한 정보제공을 통한 학습효과 부여</p>
+			</div>
+			<div id = "proj3"  class="projects">
+				<h3><hr/>삼성 해커톤 기어2 앱 공모전 자전거 블랙박스앱 제작<hr/></h3>
+				
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;본 프로젝트는 <b style=" color:rgb(171, 54, 54);"> TIZEN Wearable SDK를 이용한 자전거용 Walking Navigation  블랙박스 서비스</b> 구현을 위한 프로젝트이다. 이 프로젝트는 기존에 SmartPhone에서 서비스 되던 Navigation 및 블랙박스를 삼성 기어2 디바이스를 이용하여 서비스 하는 것을 목표로 한 프로젝트이다.
+				<iframe  width="70%"  height="60%" src="https://www.youtube.com/embed/_rqSm1SOHHI" frameborder="0" allowfullscreen style=" margin-left:15%; margin-right:15%; margin-top:20px; margin-bottom:20px;"></iframe>
+	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자전거 인구 1000만 시대가 도래한 바, 자전거를 타는 인원이 점점 늘어나고 있다. 이에 따라 자전거 사고발생 횟수가 증가하여, 자전거 사고를 명확하게 판가름 할 필요성이 필요해졌다. 자전거용 주변 전자 장비들이 상대적으로 비싼 가격에 판매되어 구입이 꺼려지고 있으며, 자전거용 블랙박스가 부재하며 현재 소형 자량용 블랙박스를 별도 구매하여 사용되고 있다.
+또한, <b style=" color:rgb(171, 54, 54);">smart watch의 전면카메라(samsung gear2) , 다양한 센서, 3인치 디스플레이 등을 이용하여 여러목적으로 사용할 수 있으며 소형 장비들을 대체</b>할 수 있는 가능성을 가졌다.
+	본 프로젝트를 통해 최근 부상하고 있는 Wearable 시장에 걸 맞는 어플리케이션 서비스를 제공하기 위함이다. 기존의 SmartPhone 사용자는 자전거용 Navigation 이용을 위해 휴대폰을 계속 주시해야 한다는 번거로움이 있고, 자전거용 블랙박스를 위해 추가 장비를 구매해야 했으나, Wearable 디바이스를 사용한다면 이러한 번거로움을 해결할 수 있다. </p>
+			</div>
+			<div id = "proj4"  class="projects">
+				<h3><hr/>C-school 융합프로젝트 : 공감sns ‘토닥’ 개발 <hr/></h3>
+				<img src="proj4.jpg"; width="40%" style="float:right;  margin:20px;" >
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‘공감’을 컨셉으로 하여 직접 지문을 입력하는 등의 컨셉으로한 <b style=" color:rgb(171, 54, 54);">sns 서비스 디자인</b>
+디지털 시대, 소통의 부재로 인한 개인의 고립
+어떠한 모습의 개인이라도 서로 인정해주고, 
+서로의 마음에 공감하고 소통할 수 있는 공간이 필요하다
+손편지만이 줄 수 있는 감동을 토닥을 통해 구현
+인간은 따뜻한 온도로 적당히 느린 속도로 쓰다듬을 때 강하게 반응한다; 포유류의 생존 전략
+이를 적용해서 화면을 터치함으로써 공감의 표시를 할 수 있게 해준다.
+이 때 터치된 화면은 붉은색으로 표시됨으로써 따뜻한 온기를 시각적으로 느낄 수 있다.
+고민자는 공감자의 지문을 느낄 수 있다.
+‘공감’을 컨셉으로 하여 직접 지문을 입력하는 등의 컨셉으로한sns 서비스 디자인
+디지털 시대, 소통의 부재로 인한 개인의 고립
+어떠한 모습의 개인이라도 서로 인정해주고, 
+서로의 마음에 공감하고 소통할 수 있는 공간이 필요하다<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b style=" color:rgb(171, 54, 54);">손편지만이 줄 수 있는 감동을 토닥을 통해 구현</b>
+인간은 따뜻한 온도로 적당히 느린 속도로 쓰다듬을 때 강하게 반응한다; 포유류의 생존 전략
+이를 적용해서 화면을 터치함으로써 공감의 표시를 할 수 있게 해준다.
+이 때 터치된 화면은 붉은색으로 표시됨으로써 따뜻한 온기를 시각적으로 느낄 수 있다.
+고민자는 공감자의 지문을 느낄 수 있다.
+
+</p>
+			</div>
+		</div>
+		<div id = "menu4"></div>
+		<div id = "contact" style="margin-bottom:15%; padding-top:5%" >
+		<p style="font-size : 50px; text-align:center; " >Category : Contact </p>
+			<form>
+				<p>Add a contact form like the one below.
+					<h2>필수 입력사항</h2><br>
+					<label for="name">이름 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "text" id="name" value="" style="background-color:gray;"><br>
+					날짜 :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" style="background-color:gray;">	
+				</p>
+				<p>
+					<h2>추가 입력사항</h2>
+					<fieldset>
+						<legend>성별</legend>
+					
+						<input type="radio" name = "a">여자
+						<input type="radio" name = "a">남자
+					
+					</fieldset>
+				</p>
+				<p>
+					<fieldset>
+						<legend>연락목적</legend>
+					
+						<input type="checkbox" name = "q">정보공유
+						<input type="checkbox" name = "w">친목도모
+						<input type="checkbox" name = "e">스터디
+						<input type="checkbox" name = "y">기타
+					
+					</fieldset>
+				</p>
+				<p>
+					<h2>연락내용</h2>
+					
+						직업&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;<select style="background-color:gray;">
+							<option value="base" selected>선택</option>
+							<option value="stu">대학생</option>
+							<option value="webdev">직장인</option>
+							<option value="webdes">무직</option>
+							<option value="edu">전문직</option>
+							<option value="etc">기타</option>
+						</select><br>
+						남길말씀<textarea name = "feedback" rows="8" cols="70" style="background-color:gray;"></textarea>
+					
+					
+				</p>
+				<hr></hr>
+
+				<input type = "submit" value="문의하기" onclick = "alert('김예솔님께 글이 전달되었습니다.')" style="background-color: rgb(171, 54, 54); color:white; font-size:20px; width:130px; height:50px" >
+				
+			</form>
+		</div>
+		<div id = "menu5"></div>
+		<div id = "uncat" style=" padding-top:5%">
+		<p style="font-size : 50px; " >Category : Uncategorized </p>
+		<div id="blank" style="height:50%"> </div>
+			
+		<a id="ball1_a" href = "ball1.html" target="_blank"><div id="ball1"></div></a>
+		<a id="ball2_a" href = "ball2.html" target="_blank"><div id="ball2"> </div><a>
+		<a id="ball3_a" href = "ball3.html" target="_blank"><div id="ball3"> </div><a>
+		
+
+		</div>
+	</body>
+</html>
